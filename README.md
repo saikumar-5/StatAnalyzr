@@ -70,11 +70,6 @@ This Python script handles the download and extraction of the following crucial 
 * **FLOSS (Flare-On Static String Extractor):** This tool is used for deobfuscating and extracting strings from the malware sample. The script automatically downloads the **Linux version** of the FLOSS binary from its official GitHub releases.
 * **UPX (Ultimate Packer for eXecutables):** Used for detecting and, if possible, unpacking UPX-packed executables. The script automatically downloads the **Linux version** of the UPX binary from its official GitHub releases.
 
-**Important Note for Windows Users:**
-While the Python script itself is designed for cross-platform compatibility, the FLOSS and UPX binaries it downloads are specifically compiled for **Linux environments**.
-
-If you're running this tool on **Windows**, it's strongly recommended to use a **Windows Subsystem for Linux (WSL)** environment. By installing a Linux distribution (like Ubuntu) via the Microsoft Store and then running this Python script from within your WSL terminal, the Linux FLOSS and UPX binaries will execute correctly, ensuring full functionality.
-
 ---
 
 ## 🔑 API Key Setup (VirusTotal)
@@ -88,15 +83,8 @@ To enable the VirusTotal query feature, you must provide your personal VirusTota
 
 2.  **Paste into the Script:**
     * Open the `Static_Analysis_Tool.py` file using a plain text editor (e.g., VS Code, Notepad++, Sublime Text).
-    * Locate the line that begins with `VIRUSTOTAL_API_KEY = ` near the top of the file.
-    * The provided code already has a key set. If you wish to use a different key, simply replace the existing value with your actual VirusTotal API key.
-
-    ```python
-    # --- IMPORTANT: PLACE YOUR VIRUSTOTAL API KEY HERE ---
-    # Replace 'YOUR_VIRUSTOTAL_API_KEY_HERE' with your actual VirusTotal API Key.
-    VIRUSTOTAL_API_KEY = '6fa8bd53cf29d967f03114ee6ff3140a2d16de8769b596dc3f465043f7546ef3'
-    # -----------------------------------------------------
-    ```
+    * Locate the line that begins with `VIRUSTOTAL_API_KEY = YOUR_VIRUSTOTAL_API_KEY_HERE` near the top of the file.
+    * Replace 'YOUR_VIRUSTOTAL_API_KEY_HERE' with your actual VirusTotal API Key.
     * Save the changes to the `Static_Analysis_Tool.py` file.
 
 ---
