@@ -12,7 +12,7 @@ import platform
 
 # --- IMPORTANT: PLACE YOUR VIRUSTOTAL API KEY HERE ---
 # Replace 'YOUR_VIRUSTOTAL_API_KEY_HERE' with your actual VirusTotal API Key.
-VIRUSTOTAL_API_KEY = '6fa8bd53cf29d967f03114ee6ff3140a2d16de8769b596dc3f465043f7546ef3'
+VIRUSTOTAL_API_KEY = 'YOUR_VIRUSTOTAL_API_KEY_HERE'
 # -----------------------------------------------------
 
 try:
